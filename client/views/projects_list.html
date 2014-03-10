@@ -1,0 +1,15 @@
+<template name="projectsList">
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4>Your projects</h4>
+			</div>
+			
+				<ul class="list-group">
+				{{#each projects}}
+					<li class="list-group-item list-group-item-{{status}}"><span><a href="">{{name}}</a> ({{number}})</span></li>
+				{{/each}}
+				</ul>
+		</div>
+	</div>
+</template>
