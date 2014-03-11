@@ -3,15 +3,14 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-standard-app-packages
 insecure
 preserve-inputs
-bootstrap
 underscore
 http
-accounts-base
-accounts-ui
 coffeescript
-bootstrap-3
 iron-router
 spin
+accounts-password
+accounts-ui-bootstrap-3
+bootstrap-3
+standard-app-packages

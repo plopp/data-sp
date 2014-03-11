@@ -3,7 +3,19 @@
 	margin: 0px 0px 0px 0px;
 }
 
-ul{
+ul {
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
+}
+
+.rows {
+	border-radius: 0px !important;
+	border-bottom: 1px #c3c3c3c3 !important;
+	border-right: 0px transparent !important;
+	border-left: 0px solid !important;
+	border-top: 0px transparent !important;
+}
+
+.spinner {
+	padding: 400px 0px 0px 0px;
 }
