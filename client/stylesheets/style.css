@@ -16,6 +16,10 @@ ul {
 	border-top: 0px transparent !important;
 }
 
+.headline > tr {
+	font-weight: bold;
+}
+
 .spinner {
 	padding: 400px 0px 0px 0px;
 }

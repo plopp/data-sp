@@ -4,12 +4,73 @@
 			<div class="panel-heading">
 				<h4>Your projects</h4>
 			</div>
-			
-				<ul>
-				{{#each projects}}
-					<a href="{{pathFor 'projectPage'}}"><li id="projectlist" class="list-group-item list-group-item-{{status}} rows"><span>{{name}} ({{number}})</span></li></a>
-				{{/each}}
-				</ul>
+
+
+			 <!-- Table -->
+  <table class="table">
+  <tr class="headline">
+  	<th>Favourite</th>
+  	<th>Title</th>
+  	<th>Project number</th>
+  	<th>Details</th>
+  	<th>Status</th>
+  </tr>
+  {{#each favorites}}
+  <tr id="projectlist" class="">
+					<td>
+						{{#if isFav}}
+						<span class="glyphicon glyphicon-star" id="{{_id}}"></span>
+						{{else}}
+						<span class="glyphicon glyphicon-star-empty" id="{{_id}}"></span>
+						{{/if}}
+					</td>
+					<td>{{name}}</td>
+					<td>({project})</td>
+					<td>Details</td>
+					<td>
+						<button type="button" class="btn btn-{{status}} btn-xs">
+						{{#if success}}
+							<span class="glyphicon glyphicon-ok"></span> OK
+						{{else}}
+							{{#if warning}}
+							<span class="glyphicon glyphicon-question-sign"></span> Warning
+							{{else}}
+							<span class="glyphicon glyphicon-remove"></span> Error
+							{{/if}}
+						{{/if}}
+						</button>
+						
+				</tr>
+  {{/each}}
+  {{#each projects}}
+  <tr id="projectlist" class="">
+					<td>
+						{{#if isFav}}
+						<span class="glyphicon glyphicon-star" id="{{_id}}"></span>
+						{{else}}
+						<span class="glyphicon glyphicon-star-empty" id="{{_id}}"></span>
+						{{/if}}
+					</td>
+					<td>{{name}}</td>
+					<td>({project})</td>
+					<td>Details</td>
+					<td>
+						<button type="button" class="btn btn-{{status}} btn-xs">
+						{{#if success}}
+							<span class="glyphicon glyphicon-ok"></span> OK
+						{{else}}
+							{{#if warning}}
+							<span class="glyphicon glyphicon-question-sign"></span> Warning
+							{{else}}
+							<span class="glyphicon glyphicon-remove"></span> Error
+							{{/if}}
+						{{/if}}
+						</button>
+						
+				</tr>
+  {{/each}}
+  </table>
 		</div>
 	
 </template>
+<!-- <a href="{{pathFor 'projectPage'}}">{{title}}</a>-->
