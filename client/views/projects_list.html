@@ -24,7 +24,7 @@
 						<span class="glyphicon glyphicon-star-empty" id="{{_id}}"></span>
 						{{/if}}
 					</td>
-					<td>{{name}}</td>
+					<td><a href="{{pathFor 'projectItem'}}">{{name}}</a></td>
 					<td>{{number}}</td>
 					<td>Details</td>
 					<td>
@@ -39,11 +39,11 @@
 							{{/if}}
 						{{/if}}
 						</button>
-						
+						</td>
 				</tr>
   {{/each}}
   {{#each projects}}
-  <tr id="projectlist" class="">
+  <tr id="projectlist">
 	<td>
 		{{#if isFav}}
 		<span class="glyphicon glyphicon-star" id="{{_id}}"></span>
@@ -51,7 +51,7 @@
 		<span class="glyphicon glyphicon-star-empty" id="{{_id}}"></span>
 		{{/if}}
 	</td>
-	<td>{{name}}</td>
+	<td><a href="{{pathFor 'projectItem'}}">{{name}}</a></td>
 	<td>{{number}}</td>
 	<td>Details</td>
 	<td>
@@ -66,7 +66,7 @@
 			{{/if}}
 		{{/if}}
 		</button>
-		
+		<td>
 </tr>
   {{/each}}
   </table>
