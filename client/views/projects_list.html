@@ -44,33 +44,32 @@
   {{/each}}
   {{#each projects}}
   <tr id="projectlist" class="">
-					<td>
-						{{#if isFav}}
-						<span class="glyphicon glyphicon-star" id="{{_id}}"></span>
-						{{else}}
-						<span class="glyphicon glyphicon-star-empty" id="{{_id}}"></span>
-						{{/if}}
-					</td>
-					<td>{{name}}</td>
-					<td>{{number}}</td>
-					<td>Details</td>
-					<td>
-						<button type="button" class="btn btn-{{status}} btn-xs">
-						{{#if success}}
-							<span class="glyphicon glyphicon-ok"></span> OK
-						{{else}}
-							{{#if warning}}
-							<span class="glyphicon glyphicon-question-sign"></span> Warning
-							{{else}}
-							<span class="glyphicon glyphicon-remove"></span> Error
-							{{/if}}
-						{{/if}}
-						</button>
-						
-				</tr>
+	<td>
+		{{#if isFav}}
+		<span class="glyphicon glyphicon-star" id="{{_id}}"></span>
+		{{else}}
+		<span class="glyphicon glyphicon-star-empty" id="{{_id}}"></span>
+		{{/if}}
+	</td>
+	<td>{{name}}</td>
+	<td>{{number}}</td>
+	<td>Details</td>
+	<td>
+		<button type="button" class="btn btn-{{status}} btn-xs">
+		{{#if success}}
+			<span class="glyphicon glyphicon-ok"></span> OK
+		{{else}}
+			{{#if warning}}
+			<span class="glyphicon glyphicon-question-sign"></span> Warning
+			{{else}}
+			<span class="glyphicon glyphicon-remove"></span> Error
+			{{/if}}
+		{{/if}}
+		</button>
+		
+</tr>
   {{/each}}
   </table>
 		</div>
-	
 </template>
 <!-- <a href="{{pathFor 'projectPage'}}">{{title}}</a>-->
