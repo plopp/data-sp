@@ -3,29 +3,29 @@ var proj2;
 
 if(Projects.find().count() == 0){
 	proj1 = Projects.insert({
-		name: 'A Testbädd solel',
-		number: '3P898765556-01',
+		name: 'Fjärrvärme, Göteborg',
+		number: '3P89812-01',
 		status: 'success',
 		isFav: true
 	});
 
 	proj2 = Projects.insert({
-		name: 'B Testprojekt 2',
-		number: 'ETk66666-06',
+		name: 'Need4b, Borås',
+		number: 'ETk1234-56',
 		status: 'success',
 		isFav: false
 	});
 
 	Projects.insert({
-		name: 'C Energi & Miljöprojekt',
-		number: 'ETk88888-01',
+		name: 'Ljungbyån',
+		number: '3P019281',
 		status: 'warning',
 		isFav: false
 	});
 
 	Projects.insert({
-		name: 'D Myndighet',
-		number: '3P4529',
+		name: 'Energisnåla hus',
+		number: '3P4529asd',
 		status: 'danger',
 		isFav: false
 	});
@@ -74,7 +74,8 @@ if(Sensors.find().count() == 0){
 		layout: layout,
 		project: proj1,
 		status: 'success',
-		ip: '164.194.64.2'
+		ip: '164.194.64.2',
+		mobile: true
 	});
 	console.log(sensor1);
 	Sensors.insert({
@@ -85,7 +86,8 @@ if(Sensors.find().count() == 0){
 		layout: layout,
 		project: proj2,
 		status: 'success',
-		ip: '247.129.176.188'
+		ip: '247.129.176.188',
+		mobile: true
 	});
 
 	Sensors.insert({
@@ -96,6 +98,7 @@ if(Sensors.find().count() == 0){
 		layout: layout,
 		project: proj2,
 		status: 'success',
-		ip: '42.74.185.66'
+		ip: '42.74.185.66',
+		mobile: true
 	});
 }

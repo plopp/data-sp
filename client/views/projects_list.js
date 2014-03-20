@@ -27,7 +27,6 @@ Template.projectsList.events = {
 		
 	},
 	'click tr' : function(e){
-		console.log(e.target);
 		var id = $(e.target).attr("href");
 		console.log(id);
 		//Route.to('www.google.se');

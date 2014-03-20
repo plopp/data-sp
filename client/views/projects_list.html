@@ -12,7 +12,6 @@
   	<th>Favourite</th>
   	<th>Title</th>
   	<th>Project number</th>
-  	<th>Details</th>
   	<th>Status</th>
   </tr>
   {{#each favorites}}
@@ -26,7 +25,6 @@
 					</td>
 					<td><a href="{{pathFor 'projectItem'}}">{{name}}</a></td>
 					<td>{{number}}</td>
-					<td>Details</td>
 					<td>
 						<button type="button" class="btn btn-{{status}} btn-xs">
 						{{#if success}}
@@ -53,7 +51,6 @@
 	</td>
 	<td><a href="{{pathFor 'projectItem'}}">{{name}}</a></td>
 	<td>{{number}}</td>
-	<td>Details</td>
 	<td>
 		<button type="button" class="btn btn-{{status}} btn-xs">
 		{{#if success}}

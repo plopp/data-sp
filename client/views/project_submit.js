@@ -5,10 +5,11 @@ Template.projectSubmit.events({
     var project = {
       name: $(e.target).find('[name=title]').val(),
       number: $(e.target).find('[name=project]').val(),
-      details: $(e.target).find('[name=details]').val()
+      status: 'success',
+      isFav: false
     }
 
-    post._id = Posts.insert(project);
-    Router.go('projectPage', project);
+    project._id = Projects.insert(project);
+    Router.go('projectsList', project);
   }
 });

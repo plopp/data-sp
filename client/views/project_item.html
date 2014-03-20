@@ -13,15 +13,17 @@
 					  	<th>IMEI</th>
 					  	<th>IP</th>
 					  	<th>Last activity</th>
+					  	<th>Data</th>
 					  	<th>Status</th>
 					  </tr>
 					  {{#each sensors}}
 					  <tr id="sensorlist">
 						<td>{{title}}</td>
-						<td><span class="glyphicon glyphicon-map-marker butt">{{lat}},{{lon}}</td>
+						<td><span class="glyphicon glyphicon-map-marker butt"></span>{{lat}},{{lon}}</td>
 						<td><span class="glyphicon glyphicon-phone"></span> {{IMEI}}</td>
-						<td><span class="glyphicon glyphicon-globe"></span> {{IP}}</td>
+						<td><span class="glyphicon glyphicon-globe"></span> {{ip}}</td>
 						<td><span class="glyphicon glyphicon-time"></span> {{lastActivity}}</td>
+						<td><a class="btn btn-default btn-xs" href="">csv</a><a class="btn btn-default btn-xs" href="">json</a><a class="btn btn-default btn-xs" href="{{pathFor 'sensorPage'}}"><span class="glyphicon glyphicon-signal"></span></button></td>
 						<td>
 							<button type="button" class="btn btn-{{status}} btn-xs">
 							{{#if success}}
